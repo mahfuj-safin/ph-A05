@@ -4,11 +4,11 @@ const Footer = () => {
   return (
     <footer className="border-t border-gray-200 bg-white">
       {/* main footer */}
-      <div className="mx-auto grid grid-cols-5 gap-12 px-10 py-14 container">
-        <div className="col-span-2">
-          <img src={logo} alt="Dev Stack" className="h-7 w-auto" />
+      <div className="grid grid-cols-1 gap-10 px-4 py-10 container mx-auto sm:grid-cols-2 md:px-8 md:py-12 lg:grid-cols-5 lg:gap-12 lg:px-10 lg:py-14">
+        <div className="lg:col-span-2">
+          <img src={logo} className="h-7 w-auto" />
 
-          <p className="mt-4 max-w-xs text-xs leading-5 text-gray-500">
+          <p className=" text-gray-500 mt-4 max-w-xs text-xs leading-5">
             Curated tools, technologies, and resources for developers building
             modern software.
           </p>
@@ -105,9 +105,9 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* footer bottom bar */}
+      {/* footer bottom  */}
       <div className="border-t border-gray-100">
-        <div className=" container mx-auto flex items-center justify-between px-10 py-5 text-xs text-gray-400 ">
+        <div className=" container mx-auto flex flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-gray-400 sm:flex-row md:px-8 lg:px-10">
           <p>© 2026 Dev Stack. All rights reserved.</p>
 
           <div className="flex items-center gap-5">
