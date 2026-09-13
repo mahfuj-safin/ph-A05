@@ -27,19 +27,19 @@ const TechnologyCard = ({
   };
 
   return (
-    <div className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+    <div className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg md:p-5">
       {/* Icon and Badge */}
-      <div className="flex items-start justify-between">
-        <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gray-100">
+      <div className="flex items-start justify-between gap-3">
+        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100 md:h-14 md:w-14">
           <img
             src={technology.icon}
             alt={technology.name}
-            className="h-10 w-10 object-contain"
+            className="h-8 w-8 object-contain md:h-10 md:w-10"
           />
         </div>
 
         <span
-          className={`rounded-full px-3 py-1 text-xs font-semibold ${
+          className={`rounded-full px-2.5 py-1 text-xs font-semibold ${
             badgeColors[technology.badgeColor]
           }`}
         >
@@ -47,9 +47,11 @@ const TechnologyCard = ({
         </span>
       </div>
 
-      {/* Technology Information */}
-      <div className="mt-5 flex-1">
-        <h3 className="text-xl font-bold text-gray-900">{technology.name}</h3>
+      {/* technologies Information */}
+      <div className="mt-4 flex-1 md:mt-5">
+        <h3 className="text-lg font-bold text-gray-900 md:text-xl">
+          {technology.name}
+        </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-500">
           {technology.description}
@@ -57,13 +59,13 @@ const TechnologyCard = ({
       </div>
 
       {/* Category, Difficulty and Rating */}
-      <div className="mt-5 flex items-center justify-between gap-2">
-        <div className="flex items-center gap-2">
-          <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="rounded-full bg-purple-100 px-2.5 py-1 text-xs font-medium text-gray-600">
             {technology.category}
           </span>
 
-          <span className="rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-600">
+          <span className="rounded-full bg-purple-100 px-2.5 py-1 text-xs font-medium text-purple-600">
             {technology.difficulty}
           </span>
         </div>
