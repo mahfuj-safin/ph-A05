@@ -9,7 +9,7 @@ import type { Technology } from '../types/technology';
 const Technologies = () => {
   const [technologies, setTechnologies] = useState<Technology[]>([]);
   const [stack, setStack] = useState<Technology[]>([]);
-
+  const [loading, setLoading] = useState(true);
   // Add one technology to stack
   const addToStack = (technology: Technology) => {
     const alreadyAdded = stack.some(item => item.id === technology.id);
@@ -53,8 +53,17 @@ const Technologies = () => {
       .then(res => res.json())
       .then(data => {
         setTechnologies(data);
+        setLoading(false);
       });
   }, []);
+
+  if (loading) {
+    return (
+      <section className="flex items-center justify-center py-20">
+        <p className="text-gray-500 text-2xl">Loading.........</p>
+      </section>
+    );
+  }
 
   return (
     <section className="bg-white px-10 py-10 container mx-auto">
