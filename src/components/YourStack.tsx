@@ -2,7 +2,7 @@ import type { Technology } from '../types/technology';
 
 interface YourStackProps {
   stack: Technology[];
-  removeFromStack: (id: number) => void;
+  removeFromStack: (id: number, name: string) => void;
   removeAll: () => void;
 }
 
@@ -48,7 +48,7 @@ const YourStack = ({ stack, removeFromStack, removeAll }: YourStackProps) => {
 
                 {/* Remove */}
                 <button
-                  onClick={() => removeFromStack(item.id)}
+                  onClick={() => removeFromStack(item.id, item.name)}
                   className="text-2xl font-light text-gray-400 hover:text-red-500"
                 >
                   ×

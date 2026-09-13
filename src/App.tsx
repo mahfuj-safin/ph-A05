@@ -1,3 +1,4 @@
+import { ToastContainer } from 'react-toastify';
 import Footer from './components/footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
@@ -10,6 +11,7 @@ const App = () => {
       <Hero />
       <Technologies />
       <Footer />
+      <ToastContainer />
     </div>
   );
 };
