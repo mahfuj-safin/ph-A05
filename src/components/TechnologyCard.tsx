@@ -15,9 +15,20 @@ const TechnologyCard = ({
 }: TechnologyCardProps) => {
   const alreadyAdded = stack.some(item => item.id === technology.id);
 
+  const badgeColors: Record<string, string> = {
+    blue: 'bg-blue-100 text-blue-600',
+    green: 'bg-green-100 text-green-600',
+    yellow: 'bg-yellow-100 text-yellow-600',
+    orange: 'bg-orange-100 text-orange-600',
+    cyan: 'bg-cyan-100 text-cyan-600',
+    gray: 'bg-gray-100 text-gray-600',
+    purple: 'bg-purple-100 text-purple-600',
+    darkNavy: 'bg-[#2E5A88] text-white',
+  };
+
   return (
     <div className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-      {/* Icon + Badge */}
+      {/* Icon and Badge */}
       <div className="flex items-start justify-between">
         <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gray-100">
           <img
@@ -27,7 +38,11 @@ const TechnologyCard = ({
           />
         </div>
 
-        <span className="rounded-full bg-orange-100 px-3 py-1 text-xs font-semibold text-orange-600">
+        <span
+          className={`rounded-full px-3 py-1 text-xs font-semibold ${
+            badgeColors[technology.badgeColor]
+          }`}
+        >
           {technology.badge}
         </span>
       </div>
@@ -41,7 +56,7 @@ const TechnologyCard = ({
         </p>
       </div>
 
-      {/* Category + Difficulty + Rating */}
+      {/* Category, Difficulty and Rating */}
       <div className="mt-5 flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">

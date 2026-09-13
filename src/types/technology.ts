@@ -7,4 +7,5 @@ export type Technology = {
   rating: number;
   difficulty: string;
   badge: string;
+  badgeColor: string;
 };

@@ -4,119 +4,131 @@
     "name": "React",
     "category": "Frontend",
     "description": "A JavaScript library for building user interfaces.",
-    "icon": "⚛️",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1iMohjip8_pfYfYBfYybfl15KovXFSV8qmDJqcMA92Q&s=10",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "blue"
   },
   {
     "id": 2,
     "name": "JavaScript",
     "category": "Language",
     "description": "A programming language for creating dynamic web applications.",
-    "icon": "🟨",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNALx4HafwrOWkBwJnJmaFKtTDWTGfU-SSRSIN39BVJg&s=10",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "yellow"
   },
   {
     "id": 3,
     "name": "TypeScript",
     "category": "Language",
     "description": "A strongly typed programming language built on JavaScript.",
-    "icon": "🔷",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUBK-fhKQqJnygnyFjfIQ2BHgr_NtO_3ABCsj3uGoUag&s=10",
     "rating": 4.7,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "blue"
   },
   {
     "id": 4,
     "name": "Node.js",
     "category": "Backend",
     "description": "A JavaScript runtime for building backend applications.",
-    "icon": "🟢",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ltZd9PQ_NzX71RUjPGCilF-nvH0kyKADW_UTlx_kRg&s=10",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "green"
   },
   {
     "id": 5,
     "name": "Express.js",
     "category": "Backend",
     "description": "A lightweight framework for building web servers with Node.js.",
-    "icon": "🚂",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQejAFh67S8FOdKIZEOpJzYLPIJYZHF3dyoUuTjumtkNA&s=10",
     "rating": 4.6,
     "difficulty": "Intermediate",
-    "badge": "Backend"
+    "badge": "Backend",
+    "badgeColor": "gray"
   },
   {
     "id": 6,
     "name": "MongoDB",
     "category": "Database",
     "description": "A NoSQL database for storing application data.",
-    "icon": "🍃",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRflTZe1khscoBTdfdAXqhk-WRxrh2ON9mrjFO94zDmDg&s=10",
     "rating": 4.6,
     "difficulty": "Intermediate",
-    "badge": "Database"
+    "badge": "Database",
+    "badgeColor": "green"
   },
   {
     "id": 7,
     "name": "PostgreSQL",
     "category": "Database",
     "description": "A powerful open-source relational database system.",
-    "icon": "🐘",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGoRVCediUjrL1lHlyry5gqBbHI9LvXOXkV7QQS8ucRQ&s=10",
     "rating": 4.7,
     "difficulty": "Advanced",
-    "badge": "Database"
+    "badge": "Database",
+    "badgeColor": "blue"
   },
   {
     "id": 8,
     "name": "Tailwind CSS",
     "category": "Styling",
     "description": "A utility-first CSS framework for building modern interfaces.",
-    "icon": "🎨",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Z0djSnCi5_hD2rTi2UnWFsTn3hS6ikrqf3D1xzkQ4g&s=10",
     "rating": 4.8,
     "difficulty": "Beginner",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "cyan"
   },
   {
     "id": 9,
     "name": "Git",
     "category": "Tools",
     "description": "A version control system for tracking code changes.",
-    "icon": "🔧",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV1FpwP2xIIMwM8wrhFh0rLam42qIYB3lVKt6aHycjSA&s=10",
     "rating": 4.9,
     "difficulty": "Beginner",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "orange"
   },
   {
     "id": 10,
     "name": "Docker",
     "category": "DevOps",
     "description": "A platform for building and running applications in containers.",
-    "icon": "🐳",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmFzwmCoZlk9Cu4815chB_sGDsBXR8ZuTB74hc7XLPAA&s=10",
     "rating": 4.7,
     "difficulty": "Advanced",
-    "badge": "DevOps"
+    "badge": "DevOps",
+    "badgeColor": "blue"
   },
   {
     "id": 11,
     "name": "Next.js",
     "category": "Frontend",
     "description": "A React framework for building modern web applications.",
-    "icon": "▲",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlLx4vrMGpgZfgTX1MU6m0_6_lXo6_DcqbSOy95RnzKA&s=10",
     "rating": 4.8,
     "difficulty": "Advanced",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "darkNavy"
   },
   {
     "id": 12,
     "name": "Python",
     "category": "Language",
     "description": "A versatile programming language used for web development and more.",
-    "icon": "🐍",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2O5xZS0WlxU4UdLKo3Hsduh0t4DmQQAeoO_RDI8XXTw&s=10",
     "rating": 4.9,
     "difficulty": "Beginner",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "darkNavy"
   }
 ]

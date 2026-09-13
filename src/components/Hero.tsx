@@ -3,7 +3,7 @@ import heroImage from '../assets/banner-stack.png';
 const Hero = () => {
   return (
     <section className="bg-white">
-      <div className="flex items-center px-10 py-20 container mx-auto">
+      <div className="flex items-center px-10 py-10 container mx-auto">
         {/* hero text and button */}
         <div className="w-1/2">
           <h1 className="text-6xl font-bold text-gray-900">
@@ -21,7 +21,7 @@ const Hero = () => {
           </p>
 
           <div className="flex gap-4 mt-8">
-            <button className="text-white rounded-[10px] bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 px-6 py-3">
+            <button className="text-white rounded-[10px] bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 px-6 py-3">
               Explore Technologies
             </button>
             <button className="text-gray-700 border border-gray-300 rounded-lg px-6 py-3 ">

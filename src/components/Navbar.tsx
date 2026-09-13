@@ -22,7 +22,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
           <button className="text-sm text-gray-700">Sing In</button>
-          <button className="text-sm text-white rounded-full bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 px-5 py-2">
+          <button className="text-sm text-white rounded-full px-5 py-2 bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 ">
             Sing Up
           </button>
         </div>

@@ -9,7 +9,7 @@ const Technologies = () => {
   const [technologies, setTechnologies] = useState<Technology[]>([]);
   const [stack, setStack] = useState<Technology[]>([]);
 
-  // Add technology to stack
+  // Add one technology to stack
   const addToStack = (technology: Technology) => {
     const alreadyAdded = stack.some(item => item.id === technology.id);
 
@@ -30,7 +30,7 @@ const Technologies = () => {
     setStack([]);
   };
 
-  // Load technologies from JSON
+  // Technologies load from JSON
   useEffect(() => {
     fetch('/technologies.json')
       .then(res => res.json())
@@ -40,8 +40,8 @@ const Technologies = () => {
   }, []);
 
   return (
-    <section className="bg-white px-10 py-20 container mx-auto">
-      {/* Section Heading */}
+    <section className="bg-white px-10 py-10 container mx-auto">
+      {/* Technologies Heading */}
       <div className="mb-10 text-left ">
         <h2 className="text-4xl font-bold text-gray-900">
           Explore the{' '}
@@ -55,7 +55,7 @@ const Technologies = () => {
         </p>
       </div>
 
-      {/* Technologies Area */}
+      {/* Technologies  */}
       <div className="grid grid-cols-4 gap-8">
         {/* Technology Cards */}
         <div className="col-span-3 grid grid-cols-3 gap-6">
@@ -69,7 +69,7 @@ const Technologies = () => {
           ))}
         </div>
 
-        {/* Your Stack Sidebar */}
+        {/*  Sidebar */}
         <YourStack
           stack={stack}
           removeFromStack={removeFromStack}
