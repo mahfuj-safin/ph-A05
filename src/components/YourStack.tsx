@@ -9,7 +9,6 @@ interface YourStackProps {
 const YourStack = ({ stack, removeFromStack, removeAll }: YourStackProps) => {
   return (
     <aside className="h-fit self-start rounded-xl bg-white p-6 shadow">
-      {/* Heading */}
       <h3 className="text-xl font-semibold text-gray-800">Your Stack</h3>
 
       <p className="mt-1 text-sm text-gray-400">
@@ -30,7 +29,7 @@ const YourStack = ({ stack, removeFromStack, removeAll }: YourStackProps) => {
                 key={item.id}
                 className="flex items-center justify-between rounded-xl border border-gray-200 p-3"
               >
-                {/* Icon + Info */}
+                {/* Icon and Info */}
                 <div className="flex items-center gap-3">
                   <img
                     src={item.icon}
